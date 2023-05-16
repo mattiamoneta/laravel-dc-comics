@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Generic\PageController;
+use App\Http\Controllers\Generic\ComicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +14,6 @@ use App\Http\Controllers\Generic\PageController;
 |
 */
 
-Route::get('/', [PageController::class, 'index']);
-Route::resource('comics', PageController::class);
+Route::get('/', [ComicController::class, 'index']);
+Route::resource('comics', ComicController::class);
 
