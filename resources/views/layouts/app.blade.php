@@ -14,6 +14,16 @@
 
 <body>
 
+    <main>
+        <div class="container">
+            <div class="row">
+
+                @yield('page-content')
+
+            </div>
+        </div>
+    </main>
+
 </body>
 
 </html>
