@@ -6,6 +6,13 @@
 @endsection
 
 @section('page-content')
+    
+    <div class="row">
+        <div class="col-5 mb-3">
+            <a href="{{ route('comics.create') }}" class="btn btn-primary">Add New Item</a>
+        </div>
+    </div>
+
     <table class="table">
         <thead>
             <tr>
@@ -15,6 +22,7 @@
                 <th scope="col">Series</th>
                 <th scope="col">Sale</th>
                 <th scope="col">Actions</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>

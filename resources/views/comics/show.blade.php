@@ -18,7 +18,7 @@
                         <h5 class="card-title">{{$comic->title}}</h5>
                         <p class="card-text">{{$comic->description}}</p>
                 
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="{{route('comics.index')}}" class="btn btn-primary">Back</a>
                         </div>
                 </div>
             </div>
