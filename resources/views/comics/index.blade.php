@@ -11,12 +11,10 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Title</th>
-                <th scope="col">Description</th>
-                <th scope="col">Thumb</th>
                 <th scope="col">Price</th>
                 <th scope="col">Series</th>
                 <th scope="col">Sale</th>
-                <th scope="col">Type</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -25,12 +23,10 @@
                 <tr>
                     <th scope="row">{{ $index }}</th>
                     <td>{{ $item['title'] }}</td>
-                    <td>{{ $item['description'] }}</td>
-                    <td><img src="{{ $item['thumb'] }}" alt=""></td>
                     <td>{{ $item['price'] }}</td>
                     <td>{{ $item['series'] }}</td>
                     <td>{{ $item['sale_date'] }}</td>
-                    <td>{{ $item['type'] }}</td>
+                    <td><a href="{{ route('comics.show', $item['id']) }}" class="btn btn-success">Info</a></td>
                 </tr>
             @endforeach
 
