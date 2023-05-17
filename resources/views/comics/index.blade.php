@@ -37,14 +37,15 @@
                     <td><a href="{{ route('comics.edit', $item->id) }}" class="btn btn-warning">Edit</a></td>
 
                     <td>
-                    <form action="{{route('comics.destroy', $item->id)}}" method="post">
-                        @csrf
-                        @method('DELETE')
+                        <form action="{{ route('comics.destroy', $item->id) }}" method="post"
+                            onSubmit="return confirm('Delete selected comic?');">
+                            @csrf
+                            @method('DELETE')
 
-                        <button type="submit" class="btn btn-danger">DELETE</button>
-                    </form>
+                            <button type="submit" class="btn btn-danger" id="btnDelete">DELETE</button>
+                        </form>
 
-                </td>
+                    </td>
                 </tr>
             @endforeach
 
