@@ -4,9 +4,6 @@
             <div class="col-3">
                 Copyright &copy; {{ date('Y') }} All Rights Reserved.
             </div>
-            <div class="col-9">
-
-            </div>
         </div>
     </div>
 </footer>

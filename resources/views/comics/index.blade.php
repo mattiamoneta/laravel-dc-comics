@@ -30,7 +30,7 @@
                         <tr>
                             <th scope="row">{{ $index }}</th>
                             <td>{{ $item['title'] }}</td>
-                            <td>{{ $item['price'] }}</td>
+                            <td>$ {{ $item['price'] }}</td>
                             <td>{{ $item['series'] }}</td>
                             <td>{{ $item['sale_date'] }}</td>
                             <td><a href="{{ route('comics.show', $item['id']) }}" class="btn btn-sm btn-outline-primary"><i
