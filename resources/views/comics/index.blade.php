@@ -37,12 +37,12 @@
                     <td><a href="{{ route('comics.edit', $item->id) }}" class="btn btn-warning">Edit</a></td>
 
                     <td>
-                        <form action="{{ route('comics.destroy', $item->id) }}" method="post"
-                            onSubmit="return confirm('Delete selected comic?');">
+                        <form action="{{ route('comics.destroy', $item->id) }}" method="post" id="delForm">
                             @csrf
                             @method('DELETE')
 
-                            <button type="submit" class="btn btn-danger" id="btnDelete">DELETE</button>
+                            <button type="button" class="btn btn-danger" id="btnDelete" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">DELETE</button>
                         </form>
 
                     </td>
@@ -53,4 +53,24 @@
 
         </tbody>
     </table>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">DELETE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
+                    <button type="submit" class="btn btn-danger" form="delForm">YES</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
