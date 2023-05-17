@@ -1,1 +1,22 @@
+@use './partials/colors' as *;
+@use './partials/navbar' as *;
 @import '~bootstrap/scss/bootstrap';
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-link,
+.btn,
+thead,
+label {
+    font-family: 'Oswald', sans-serif;
+}
+
+// .comic-thumb-small {
+//     width: 50%;
+//     object-fit: cover;
+// }

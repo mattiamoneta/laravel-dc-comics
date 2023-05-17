@@ -1,6 +1,8 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dc">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">DC Comics</a>
+        <a class="navbar-brand" href="#">
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="" class="nav-logo">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -8,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('comics.index') }}">Comics</a>
+                    <a class="nav-link active text-uppercase text-white" aria-current="page" href="{{ route('comics.index') }}">Dashboard</a>
                 </li>
             </ul>
         </div>
