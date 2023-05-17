@@ -6,7 +6,6 @@
 @endsection
 
 @section('page-content')
-    
     <div class="row">
         <div class="col-5 mb-3">
             <a href="{{ route('comics.create') }}" class="btn btn-primary">Add New Item</a>
@@ -35,6 +34,7 @@
                     <td>{{ $item['series'] }}</td>
                     <td>{{ $item['sale_date'] }}</td>
                     <td><a href="{{ route('comics.show', $item['id']) }}" class="btn btn-success">Info</a></td>
+                    <td><a href="{{ route('comics.edit', $item->id) }}" class="btn btn-warning">Edit</a></td>
                 </tr>
             @endforeach
 
