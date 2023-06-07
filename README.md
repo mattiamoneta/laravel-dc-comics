@@ -41,6 +41,6 @@ Il pannello è fornito di tutte le funzionalità base:
 
 - [Vite 4.2](https://vitejs.dev/)
 - [Laravel 9](https://laravel.com/)
-- MySQL
+- [MySQL](https://www.mysql.com/it/)
 - HTML/CSS
 - SCSS
